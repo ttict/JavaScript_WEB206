@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TT Travel - Hãy băt đầu hành trình của bạn</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/jquery.parallax-1.1.3.resize.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.caroufredsel.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/cform.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpTDeUdMR9bc1SWZos_ma9hCHF4R09hGk"></script>
+    <script src="js/googlemap.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body class="not-front page-contacts">
+<div id="main">
+    <div class="top1_wrapper">
+        <div class="container">
+            <div class="top1 clearfix">
+                <div class="email1"><a href="#">thaitph06858@fpt.edu.vn</a></div>
+                <div class="phone1">+84 9123 456 789</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top2_wrapper">
+        <div class="container">
+            <div class="top2 clearfix">
+                <header>
+                    <div class="logo_wrapper">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                </header>
+                <div class="navbar navbar_ navbar-default">
+                    <div class="navbar-collapse navbar-collapse_ collapse">
+                        <ul class="nav navbar-nav sf-menu clearfix">
+                            <li class="sub-menu sub-menu-1">
+                                <a href="index.html">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="about.html">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="sub-menu sub-menu-1">
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li class="active">
+                                <a href="contacts.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parallax2" class="parallax">
+        <div class="bg2 parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="parallax-content">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumbs1_wrapper">
+        <div class="container">
+            <div class="breadcrumbs1"><a href="index.html">Trang chủ</a><span>/</span>Liên hệ</div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <br>
+                    <h4>ĐỊA CHỈ</h4>
+                    <p>
+                        15 Đông Quan,<br>
+                        Quan Hoa, Cầu Giấy, Hà Nội<br>
+                        <a href="#">thaitph06858@fpt.edu.vn</a>
+                    </p>
+                    <h4>SỐ ĐIỆN THOẠI</h4>
+                    <p>
+                        +440 875369208<br>
+                        +440 353363114
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>LIÊN HỆ</h3>
+                    <div id="note"></div>
+                    <div id="fields">
+                        <form id="ajax-contact-form" class="form-horizontal" action="javascript:alert('success!');">
+
+                            <div class="form-group">
+                                <label for="inputName">Họ và tên</label>
+                                <input type="text" class="form-control" id="inputName" name="name" value="Họ và Tên"
+                                       onBlur="if(this.value=='') this.value='Họ và Tên'"
+                                       onFocus="if(this.value =='Họ và Tên' ) this.value=''">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="text" class="form-control" id="inputEmail" name="email"
+                                       value="Địa chỉ Email" onBlur="if(this.value=='') this.value='Địa chỉ Email'"
+                                       onFocus="if(this.value =='Địa chỉ Email' ) this.value=''">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="inputMessage">Nội dung tin nhắn</label>
+                                        <textarea class="form-control" rows="7" id="inputMessage" name="content"
+                                                  onBlur="if(this.value=='') this.value='Nội dung tin nhắn'"
+                                                  onFocus="if(this.value =='Nội dung tin nhắn' ) this.value=''">Nội dung tin nhắn</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-default btn-cf-submit">Gửi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bot1_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo2_wrapper">
+                        <a href="index.html" class="logo2">
+                            <img src="images/logo2.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                    <p>
+                        Công ty du lịch TT Travel <br>
+                        Địa chỉ : 15 Đông Quan, Quan Hoa, Cầu Giấy, HN <br>
+                        Điện Thoại : 0912.345.678 <br>
+                        Website: www.tttravel.com.vn
+                        Email : thaitph06858@fpt.edu.vn
+                        Giấy phép LHQT số: GP79-042/2009/TCDL-GP. <br>
+                        Số ĐKKD: 030 5448 565 được cấp bởi sở KH&ĐT HN. <br>
+                        Đăng ký lần đầu ngày 01/01/2019
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="bot1_title">Góc khách hàng</div>
+                    <ul class="ul1">
+                        <li><a href="#">Chính sách đặt tour</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Ý kiến khách hàng</a></li>
+                    </ul>
+
+                    <div class="social2_wrapper">
+                        <ul class="social2 clearfix">
+                            <li class="nav1"><a href="#"></a></li>
+                            <li class="nav2"><a href="#"></a></li>
+                            <li class="nav3"><a href="#"></a></li>
+                            <li class="nav4"><a href="#"></a></li>
+                            <li class="nav5"><a href="#"></a></li>
+                            <li class="nav6"><a href="#"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="bot1_title">Đăng ký nhận tin mới</div>
+                    <div class="newsletter_block">
+                        <div class="newsletter-wrapper clearfix">
+                            <form class="newsletter" action="javascript:;">
+                                <input type="text" name="s" value='Email'
+                                onBlur="if(this.value=='') this.value='Email'"
+                                onFocus="if(this.value =='Email' ) this.value=''">
+                                <a href="#" class="btn-default btn3">GỬI</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="phone2">+84 912 345 678</div>
+                    <div class="support1"><a href="#">thaitph06858@fpt.edu.vn</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot2_wrapper">
+        <div class="container">
+            <div class="left_side">
+                Copyright © 2019 <strong>TT</strong> <span>|</span> <a href="#">Chính sách bảo mật</a> <span>|</span>
+                <a href="#">Giới thiệu</a> <span>|</span> <a href="#">FAQ</a> <span>|</span> <a href="#">Liên hệ hỗ trợ</a>
+            </div>
+            <div class="right_side">Thiết kế bởi <strong>TT</strong></div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
